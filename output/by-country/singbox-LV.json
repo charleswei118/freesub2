@@ -6,17 +6,22 @@
     {
       "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-      "server": "185.255.179.11",
-      "server_port": 9443,
-      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
+      "server": "sql.popmintxo.cc",
+      "server_port": 443,
+      "uuid": "d806a58b-33aa-42e0-b170-395e49c16b37",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hub-lv-01.hanvpn.cc",
-        "insecure": false
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "lv01-grpc-8e47a"
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Y0noOXC8qHmbM0GmDpj-9BBwKSOtHs-uMbNfKU050GQ",
+          "short_id": "b558b9305a0b"
+        }
       }
     },
     {
