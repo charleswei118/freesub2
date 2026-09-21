@@ -22,6 +22,7 @@ proxies:
   tls: true
   servername: neth9.lunariai.ru
   skip-cert-verify: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
