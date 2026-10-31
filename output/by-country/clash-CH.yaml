@@ -5,12 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
-  server: 132.243.175.144
-  port: 8388
+  server: 208.69.78.208
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   server: 140.238.213.114
   port: 50160
@@ -20,22 +21,6 @@ proxies:
   sni: 'off'
   skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
-  server: 208.69.78.19
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  server: 208.69.78.29
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
   server: 208.69.78.217
   port: 2053
   udp: true
@@ -47,15 +32,23 @@ proxies:
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  server: 208.69.78.208
+- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+  server: 208.69.78.29
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.yourultimateprofessionalcareerhub.com
+  sni: learn.yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
+  server: 208.69.78.19
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
   server: 149.33.15.213
   port: 443
   udp: true
@@ -65,6 +58,14 @@ proxies:
   servername: swz.proxyplankton.ru
   skip-cert-verify: false
   client-fingerprint: firefox
+- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
+  server: 208.69.78.60
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
