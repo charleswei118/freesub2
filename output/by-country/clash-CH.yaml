@@ -13,12 +13,12 @@ proxies:
   sni: 'off'
   skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  server: 208.69.78.208
+  server: 208.69.78.29
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.yourultimateprofessionalcareerhub.com
+  sni: learn.yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   server: 208.69.78.19
@@ -29,22 +29,6 @@ proxies:
   sni: www.yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  server: 208.69.78.29
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  server: 208.69.78.60
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
   server: 208.69.78.217
   port: 2053
   udp: true
@@ -65,8 +49,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,7 +58,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
 rules:
 - MATCH,PROXIES
