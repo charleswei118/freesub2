@@ -14,36 +14,13 @@
     {
       "type": "trojan",
       "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-      "server": "th001.zestapp778.com",
+      "server": "38.60.233.126",
       "server_port": 33079,
       "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
         "server_name": "th001.zestapp778.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 03 - xiaohe",
-      "server": "103.107.53.42",
-      "server_port": 443,
-      "uuid": "affb10d4-3835-4b1f-b5a3-3481489911b6",
-      "tls": {
-        "enabled": true,
-        "server_name": "cat.ilovezhenjiu.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cgciws",
-        "headers": {
-          "Host": "cat.ilovezhenjiu.top"
-        }
+        "insecure": false
       }
     },
     {
@@ -52,8 +29,7 @@
       "outbounds": [
         "auto",
         "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 03 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 02 - xiaohe"
       ]
     },
     {
@@ -61,8 +37,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 03 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
