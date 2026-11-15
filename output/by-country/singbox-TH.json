@@ -6,21 +6,49 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-      "server": "zfapi.zalolink.com",
-      "server_port": 11802,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "flow": "xtls-rprx-vision",
+      "server": "104.18.44.252",
+      "server_port": 443,
+      "uuid": "e9b0ed2b-19e5-44d0-b120-1ed974ab38aa",
       "tls": {
         "enabled": true,
-        "server_name": "psstatic.cdn.bcebos.com",
+        "server_name": "dl2.vetdl.com",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4",
-          "short_id": "6c84fbac2d"
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
+      "server": "assets.opensignal.com",
+      "server_port": 80,
+      "uuid": "0c85001b-ad48-4f43-bdc9-b2b5c626a26e",
+      "transport": {
+        "type": "ws",
+        "path": "/logout",
+        "headers": {
+          "Host": "d36lt9hzl2ug3d.cloudfront.net:assets.opensignal.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - xiaohe",
+      "server": "www.true.th",
+      "server_port": 80,
+      "uuid": "f4c5605a-8424-441e-b23d-d6384d012c28",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "dcm4kwis2exkw.cloudfront.net"
         }
       }
     },
@@ -29,14 +57,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 02 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 02 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
