@@ -5,22 +5,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "109.248.17.252",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
+      "server": "46.28.67.55",
       "server_port": 443,
-      "uuid": "9000a7f3-df2a-49a8-ae56-3e7777bd32f7",
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "v4.clequinix.globalinetforallalwaysandneverbanyoubelieveme.com",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "v4-clequinix-globalinetforallalwaysandneverbanyoubelieveme-com"
       }
     },
     {
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
